@@ -1,0 +1,17 @@
+s=input()
+v=["a","e","i","o","u"]
+c=0
+s1="Sad"
+for i in range(len(s)):
+
+    if s[i] in v:
+        c=c+1
+        if c>2:
+            s1="Happy"
+            break
+    else:
+        if c>2:
+            s1="Happy"
+            break
+        c=0
+print(s1)
